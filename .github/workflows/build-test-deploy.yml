@@ -45,15 +45,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: use node.js
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
         with:
           node-version: '20.x'
       - name: configure github pages
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
         with:
           static_site_generator: text
       - run: npm install
